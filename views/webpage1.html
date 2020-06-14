@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.img__wrap {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+
+}
+.img__description {
+  position: absolute;
+  bottom: 0px;
+  color: #000000;
+  visibility: hidden;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  opacity: 0;
+  text-align: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+.headerw1{
+  margin-bottom:30px;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+  <h1 class='headerw1'>Show Current Users Viewing Webpage 1</h1>
+
+  <div class="img__wrap">
+    <img src="/staticimg/avatar-7.png" alt="Avatar" class="avatar">
+    <p class="img__description">User1</p>
+  </div>
+
+  <div class="img__wrap">
+    <img src="/staticimg/josh-d-avatar.jpg" alt="Avatar" class="avatar">
+    <p class="img__description">User2</p>
+  </div>
+
+  <div class="img__wrap">
+    <img src="/staticimg/avatar-7.png" alt="Avatar" class="avatar">
+    <p class="img__description">User3</p>
+  </div>
+
+  <div class="img__wrap">
+    <img src="/staticimg/josh-d-avatar.jpg" alt="Avatar" class="avatar">
+    <p class="img__description">User4</p>
+  </div>
+
+  <div class="img__wrap">
+    <img src="/staticimg/avatar-7.png" alt="Avatar" class="avatar">
+    <p class="img__description">User5</p>
+  </div>
+
+  <div class="img__wrap">
+    <img src="/staticimg/josh-d-avatar.jpg" alt="Avatar" class="avatar">
+    <p class="img__description">User6</p>
+  </div>
+
+</body>
+</html>
